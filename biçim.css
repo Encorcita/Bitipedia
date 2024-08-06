@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #151515;
+  color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+main {
+  padding: 20px 0;
+  min-height: 100vh;
+}
+
+.kap {
+  max-width: 702px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #151515;
+}
+
+.arama-yeri {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #1f1f1f;
+  border: 1px solid #1f1f1f;
+  border-radius: 15px;
+  width: 100%;
+  height: 53px;
+  padding: 0;
+  transition: box-shadow 0.3s ease;
+}
+
+.arama-yeri:focus-within {
+  box-shadow: 0 0 15px 5px rgba(34, 139, 34, 0.8);
+}
+
+.arama-yeri girdi {
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+  height: 35px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  background-color: #1f1f1f;
+  color: white;
+  caret-color: #32CD32;
+  font-family: 'Arial', sans-serif;
+}
+
+.hortlak-yazı {
+  position: absolute;
+  color: #32CD32;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+  pointer-events: none;
+  white-space: nowrap;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sonuç {
+  text-align: left;
+  margin-top: 40px; 
+  animation: fadeIn 1s ease-in-out;
+}
+
+.sonuç .açıklama {
+  font-size: 1rem;
+  line-height: 1.6;
+  white-space: pre-line;
+  color: #f0f0f0;
+}
+
+.sonuç .vurgu {
+  font-weight: bold;
+  color: #2d6536;
+}
+
+.sözcük-sayısı {
+  color: #5C5F60;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sözcük-sayısı .vurgu {
+  font-weight: bold;
+}
