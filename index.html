@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitipedia</title>
+    <link rel="stylesheet" href="biçim.css">
+    <link rel="icon" href="beyiz.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="kap">
+            <div class="arama-kabı">
+                <p id="sözcükSayısı" class="sözcük-sayısı"></p> 
+                <div class="arama-yeri">
+                    <input type="yazı" id="aramaYeri">
+                    <span id="hortlakYazı" class="hortlak-yazı"></span>
+                </div>
+            </div>
+            <div class="sonuç" id="sonuç"></div>
+        </div>
+    </main>
+    <script src="biti.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.9/purify.min.js"></script>
+</body>
+</html>
